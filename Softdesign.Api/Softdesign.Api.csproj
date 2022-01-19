@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>f0c77d19-9dfd-46d1-bf1c-f1a64989b0c9</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\softdesign-api - Web Deploy.pubxml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.Core.Api" Version="2.43.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.13" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Softdesign.Api.Infrastructure\Softdesign.Api.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
